@@ -254,7 +254,7 @@ function cfzqd(timeout = 0) {
 }
 
 //春风转每日任务阅读新闻
-function cfzrw1() {
+function cfzrw1(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://cf-api.douzhuanapi.cn:10002/api/get_red_task_gold?id=13',
@@ -283,7 +283,7 @@ let url = {
   })
 }
 //春风转每日任务阅读60分钟
-function cfzrw2() {
+function cfzrw2(timeout = 0) {
   return new Promise((resolve) => {
 		let url = {
 				url : 'http://cf-api.douzhuanapi.cn:10002/api/get_red_task_gold?id=14',
@@ -313,7 +313,7 @@ function cfzrw2() {
 }
 
 //春风转每日任务福利视频
-function cfzrw3() {
+function cfzrw3(timeout = 0) {
   return new Promise((resolve) => {
 let url = {
         url : 'http://cf-api.douzhuanapi.cn:10002/api/get_red_task_gold?id=15',
@@ -354,7 +354,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 //春风转每日任务晒图奖励
-function cfzrw4() {
+function cfzrw4(timeout = 0) {
   return new Promise((resolve) => {
 	let url = {
 			url : 'http://cf-api.douzhuanapi.cn:10002/api/get_red_task_gold?id=5',
@@ -395,7 +395,7 @@ function cfzrw4() {
 
 
 //春风转每日任务看视频
-function cfzrwsp() {
+function cfzrwsp(timeout = 0) {
   return new Promise((resolve) => {
 		let url = {
 				url : 'http://cf-api.douzhuanapi.cn:10002/api/red_task_report?item_id=15&task_type=2',
@@ -426,7 +426,7 @@ function cfzrwsp() {
 }
 
 //春风转每日任务晒图
-function cfzrwst() {
+function cfzrwst(timeout = 0) {
   return new Promise((resolve) => {
 		let url = {
 				url : 'http://cf-api.douzhuanapi.cn:10002/api/red_task_report?item_id=5&task_type=5',
@@ -457,7 +457,7 @@ function cfzrwst() {
 }
 
 //春风转每时段id
-function cfzsdid() {
+function cfzsdid(timeout = 0) {
   return new Promise((resolve) => {
 		let url = {
 				url : 'http://cf-api.douzhuanapi.cn:10002/api/treasure_box_opt',
@@ -488,7 +488,7 @@ function cfzsdid() {
   })
 }
 //时段领取
-function cfzsdlq() {
+function cfzsdlq(timeout = 0) {
   return new Promise((resolve) => {
 		let url = {
 				url : 'http://cf-api.douzhuanapi.cn:10002/api/treasure_box_gain?treasure_box_id='+sdid+'&type=1',
@@ -519,7 +519,7 @@ function cfzsdlq() {
   })
 }
 //时段翻倍领取
-function cfzsdfb() {
+function cfzsdfb(timeout = 0) {
   return new Promise((resolve) => {
 		let url = {
 				url : 'http://cf-api.douzhuanapi.cn:10002/api/treasure_box_gain?gold_gain_id='+sdlqid+'&treasure_box_id='+sdid+'&type=2',
